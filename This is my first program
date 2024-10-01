@@ -17,3 +17,20 @@ square=side*side;
 printf("area of square:%d", square);
 
     return 0;}
+#include <stdio.h>
+ int main ()
+ {int a,b, add,sub,mul,division;
+ printf("enter any two value");
+ scanf("%d%d",&a,&b);
+ add=a+b;
+ printf("adding two value:%d",add);
+ printf("\n");
+ scanf("%d%d",&a,&b);
+ sub=a-b;
+ printf("sub two value:%d",sub);
+ printf("mul any two value");
+ scanf("%d%d",&a,&b);
+ mul=a*b;
+ printf("%d",mul);
+ return 0;
+ }
