@@ -1,0 +1,15 @@
+include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter the value");
+    scanf("%d",&a);
+    if(a%5==0)  
+    {
+        printf("divided by 5 ");
+    }
+    if(a%11==0)
+         printf(" divided by 11");
+    return 0;
+}
