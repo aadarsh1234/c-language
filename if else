@@ -1,3 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b;
+    int c;
+    printf("enter 1st number:");
+    scanf("%d",&a);
+    printf("enter 2nd number ");
+    scanf("%d",&b);
+    printf("enter 3rd number ");
+    scanf("%d",&c);
+    if(a>b && a>c)
+    {
+        printf("a is greatest");
+    }
+    if(b>a && b>c)
+    {
+      printf("b is greatest");
+    }
+    if(c>a && c>b)
+    {
+       printf("c is greatest ");
+}
+    return 0;
+}
+
+
 
 #include <stdio.h>
 
@@ -15,6 +44,9 @@ int main()
         printf("it is not divisib by 5 or 3");
     }
     return 0;
+
+
+
 }include <stdio.h>
 
 int main()
