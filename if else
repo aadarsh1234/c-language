@@ -1,5 +1,6 @@
  #include <stdio.h>
 
+
 int main()
 {
     int ram;
@@ -111,3 +112,27 @@ int main()
     }
     return 0;
 }
+
+int main()
+{
+   int x,y;
+   printf("enter the cordinate ");
+   scanf("%d%d",&x,&y);
+   if(x==0 && y==0)
+  {
+      printf("the point is origin");
+  }
+  else if(x==0){
+      printf("lies on the y-axis");
+      
+  }
+  else if (y==0){
+      printf("lies on the x axis");
+  }
+  else
+  {
+      printf("the point is not lies on the x axis and y axis");
+  }
+  return 0;
+}
+   
