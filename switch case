@@ -7,7 +7,7 @@ int main()
     scanf("%c",&operator);
     switch(operator)
     {
-        case '1':printf("+");
+        case '1':printf(" +");
         break;
         case '2':printf(" -");
         break;
@@ -22,5 +22,27 @@ int main()
     }
     
 
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    char grade;
+    printf("enter the grade ");
+    scanf("%c",&grade);
+    switch(grade){
+        case'A':printf("excellent");
+        break;
+        case'B':printf("verry good");
+        break;
+        case'C':printf("good");
+        break;
+        case'D':printf("flair");
+        break;
+        case'F':printf("fail");
+        
+    }
+    
     return 0;
 }
