@@ -46,3 +46,38 @@ int main()
     
     return 0;
 }
+
+#include<stdio.h>
+int main()
+{
+    int   month;
+    printf("enter the month(1-12):");
+    scanf("%d",&month);
+    switch (month){
+    case 12:
+    case 1:
+    case 2:
+        printf("winter\n");
+    break;
+    case 3:
+    case 4:
+    case 5:
+         printf("spring\n");
+    break;
+    case 6:
+    case 7:
+    case 8:
+          printf("summer\n");
+    break;
+    case 9:
+    case 10:
+    case 11:
+          printf("Autumn\n");
+    break;
+    default:
+         printf("invalid number \n");
+    break;
+    }
+    
+   return 0;
+}
