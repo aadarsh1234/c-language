@@ -48,3 +48,19 @@ int main()
         printf("%d ",i);
     }
 }
+
+
+#include <stdio.h>
+
+int main()
+{
+   for(int i=0;i<=4;i++)
+   {
+       for(int j=i;j<=(2*i);j++)
+   {
+       printf("*");
+   }
+   printf("\n");
+}
+    return 0;
+}
