@@ -82,6 +82,24 @@ int main()
    int lastdigit =0;
     while(n!=0){
     lastdigit=n%10;
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter the value");
+    scanf("%d",&n);
+    int r=0;
+    while(n>0){
+    r=r*10;
+    r=r+(n%10);
+    n=n/10;}
+    printf("the reverese is the number i%d",r);
+    return 0;
+}
+
     sum=sum+lastdigit;
     n=n/10;
 }
