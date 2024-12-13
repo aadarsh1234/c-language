@@ -185,11 +185,34 @@ for(int i=0;i<=6;i++){
 scanf("%d",&arr[i]);
 }
 for(int i=0;i<=6;i++){
-if(i%2!=0) arr*=2;
-else arr+=10;
+if(i%2!=0) arr[i]*=2;
+else arr[i]+=10;
 }
 for(int i=0;i<=6;i++){
-printf("%d",are[i]);
+printf("%d",arr[i]);
 }
 return 0;
+}
+
+(10)
+count number of element in given array greater than a given number x
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[7];
+    int x=4;
+    int count=0;
+    int i;
+    for(int i=0;i<=6;i++){
+    printf("enter the array %d:",i+1);
+    scanf("%d",&arr[i]);
+    if(arr[i]>x){
+        count++;
+    }
+    }
+    printf("%d", count);
+
+    return 0;
 }
