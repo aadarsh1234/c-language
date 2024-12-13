@@ -151,3 +151,45 @@ int main()
     return 0;
 }
 
+(8)
+difference sumodd or sumeven indices
+#include<stdio.h>
+int main(){
+int arr[7];
+int sumeven=0;
+int sumodd=0;
+int i=;
+for(int i=0;i<=6;i++){
+printf("enter the array %d:",i+1);
+scanf("%d",&arr[i]);
+}
+for(int i=0;i<=6;i++){
+if(i%2==0){
+sumeven +=arr[i];
+}
+else{
+sumodd +=arr[i];
+}
+}
+printf("the sum is %d",sumeven-sumodd);
+return 0;
+}
+
+(9)odd no.second multiple 
+even indexed array value by 10
+
+#include<stdio.h>
+int main(){
+int arr[7];
+for(int i=0;i<=6;i++){
+scanf("%d",&arr[i]);
+}
+for(int i=0;i<=6;i++){
+if(i%2!=0) arr*=2;
+else arr+=10;
+}
+for(int i=0;i<=6;i++){
+printf("%d",are[i]);
+}
+return 0;
+}
