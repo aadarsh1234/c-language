@@ -216,3 +216,33 @@ int main()
 
     return 0;
 }
+
+(11)
+count the no. of triplet whose sum is equal to the given x
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[8];
+    int totaltriplate=0;
+    int  x=12;
+  int i;
+  for(int i =0;i<=7;i++){
+      printf("enter the array %d:",i+1);
+      scanf("%d",&arr[i]);}
+  
+   for(int i=0;i<=7;i++){
+       for(int j=i+1;j<=7;j++){
+           for(int k=j+1;k<=7;k++){
+               if(arr[i]+arr[j]+arr[k]==x){
+                   totaltriplate++;
+                   printf("(%d,%d,%d)\n",arr[i],arr[j],arr[k]);
+               }
+           }
+       }
+   }
+   printf("%d", totaltriplate);
+   
+    return 0;
+}
