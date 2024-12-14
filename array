@@ -250,3 +250,29 @@ int main()
 
 (12)
 find the second largest element int the given array
+
+#include <stdio.h>
+//#include <limit.h>
+int main()
+{
+    int arr[7];
+    int max= arr[0];
+    int smax=arr[0];
+  int i;
+ for(int i =0;i<=6;i++){
+     printf("enter the array %d:",i+1);
+      scanf("%d",&arr[i]);}
+  
+   for(int i=0;i<=6;i++){
+       if(max<arr[i]){
+           smax=max;
+           max=arr[i];
+       }
+       else if(smax<arr[i] && max!=arr[i]){
+           smax=arr[i];
+       }
+   }
+        printf("%d", smax);
+   
+    return 0;
+}
