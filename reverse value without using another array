@@ -18,3 +18,26 @@ int main (){
      }
       return 0;   
 }
+
+(1)
+if an array arr contain n element then check if the given array is a palindrome or not
+
+include <stdio.h>
+
+int main()
+{
+    int arr[6],i,j;
+    printf("enter 6 array");
+    for(int i=0;i<=5;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(i=0,i=5;i<j;i++,j--){
+        if(arr[i]!=arr[j]){
+            printf("\n array are not palindrome ");
+        }
+    }
+     if (i>j){
+         printf("\n array are palindrome ");
+     }
+    return 0;
+}
