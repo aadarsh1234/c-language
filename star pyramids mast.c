@@ -71,4 +71,5 @@ int main()
        
     }
 
-    ret
+    return 0;
+}
