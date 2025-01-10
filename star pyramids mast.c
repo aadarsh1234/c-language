@@ -74,9 +74,9 @@ int main()
     return 0;
 }
 ABCDEFG
-ABC EFG
-AB.  FG 
-A.    G
+ABC ABC
+AB.  BC
+A.    C
 #include <stdio.h>
 
 int main()
