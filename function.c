@@ -21,3 +21,18 @@ int main()
 
     return 0;
 }
+(2)
+#include <stdio.h>
+int add(int a,int b){
+    return a+b;
+}
+int main(){
+    int a,b;
+    printf("enter the value of a and b");
+    scanf("%d %d",&a,&b);
+    int sum=add(a,b);
+    printf("the sum is %d", sum);
+
+return 0;
+}
+
