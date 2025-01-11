@@ -36,3 +36,19 @@ int main(){
 return 0;
 }
 
+(3)
+#include <stdio.h>
+void america(){
+printf("you are in America\n");
+return;
+}
+void Australia(){
+printf("you are in Australia\n");
+america();
+return;
+}
+int main(){
+  america();
+  printf("\n");
+return 0;
+}
