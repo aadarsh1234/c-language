@@ -8,7 +8,7 @@ int main()
     printf("%p",x);
     return 0;
 }
-(2)
+(2) pass by address 
 void  swap(int *x,int *y){
    int temp;
    temp=*x;
