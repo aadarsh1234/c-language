@@ -115,4 +115,24 @@ int main(){
     printf("product %d\n",product(num1,num2));
     printf("divide %.2f\n",divide(num1,num2));
 }
+
+(5) square 
+
+#include <stdio.h>
+
+int square(int num)
+{
+    return (num * num);
+}
+int main()
+{
+    int num;
+    int  n;
+    printf("Input any number for square : ");
+    scanf("%d", &num);
+    n = square(num);
+    printf("The square of %d is : %d\n",num, n); 
+    return 0;
+}
+
    
