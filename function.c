@@ -135,4 +135,56 @@ int main()
     return 0;
 }
 
+(5)
+#include <stdio.h>
+// declaration of funtion
+int add(int a,int b);
+int sub(int a,int b);
+int mul(int a,int b);
+int divide(int a,int b);
+// definition of add
+int add(int a,int b){
+    //int num1;
+   // printf("enter the value of a and b:");
+   // num1=a+b;
+   // printf("addition is=%d\n",a+b);
+   return a+b;
+}
+// definition of sub
+int sub(int a,int b){
+   //int num2;
+  //  printf("enter the value of a and b:");
+   // num2=a-b;
+  //  printf("sub is=%d\n",a-b);
+  return a-b;
+}
+// definition of mul
+int mul(int a,int b){
+   // int num3;
+ //   printf("enter the value of a and b:");
+  //  num3=a*b;
+  //  printf("mul is=%d\n",a*b);
+  return a*b;
+}
+//definition of divide
+int divide (int a,int b){
+  //  int num4;
+  //  printf("enter the value of a and b:");
+   // num4=a/b;
+  //  printf("div is=%d\n",a/b);
+  return a/b;
+}
+int main()
+{
+    int a,b;
+    printf("enter the value of a and b\n");
+    scanf("%d %d",&a,&b);
+    printf(" add = %d\n",add(a,b));
+   // add(10,5);
+ //   sub(10,5);
+  //  mul(10,5);
+  //  divide(10,5);
+   
+    return 0;
+}
    
