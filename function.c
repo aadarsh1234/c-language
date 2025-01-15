@@ -187,4 +187,32 @@ int main()
    
     return 0;
 }
+
+(6) series factorial sum n!/n
+
+#include <stdio.h>
+//calculate factorial of number 
+int factorial (int n){
+     int fact=1;
+     for (int i=1;i<=n;i++){
+         fact*=i;
+     }
+     return fact;
+}
+ int sum(int n){
+     int  sum=0;
+     for(int i=1;i<=n;i++){
+         sum+=factorial(i)/i;
+         n;
+     }
+     return sum;
+ }
+ int main(){
+     int n;
+     printf("enter value n");
+     scanf("%d",&n);
+     printf("the sum of series is=%d\n",sum(n));
+     return 0;
+ }
+
    
