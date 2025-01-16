@@ -228,6 +228,21 @@ int main()
 
     return 0;
 }
+(7) power
+    #include<stdio.h>
+    int power(int base,int raised){
+        int power=1;
+        for(int i=1;i<=raised;i++){
+            power*=base;
+        }
+    }
+    int main(){
+        int a,b;
+        printf("enter the value");
+        scanf("%d %d",&a,&b);
+        printf("%d is raised to the power %d is= %d\n",a,b,power(a,b));
+        
+    }
     
 
    
