@@ -243,6 +243,26 @@ int main()
         printf("%d is raised to the power %d is= %d\n",a,b,power(a,b));
         
     }
+(8)call by reference 
+#include <stdio.h>
+void swap(int *a, int *b){
+    int temp;
+     temp=*a;
+    *a=*b;
+    *b=temp;
+}
+int main (){
+    int x,y;
+    printf("enter the value of first number: ");
+    scanf("%d",&x);
+    printf("enter the value of second number:");
+    scanf("%d",&y);
+    printf("Before swaping x=%d,y=%d\n",x,y);
+   
+     swap(&x,&y);
+    printf("After swaping x=%d,y=%d\n",x,y);
+    return 0;
+}
     
 
    
