@@ -214,5 +214,20 @@ int factorial (int n){
      printf("the sum of series is=%d\n",sum(n));
      return 0;
  }
+(6) calculate area of circle
+#include <stdio.h>
+    float calculatearea(float radius){
+        return 3.14159*radius*radius;
+    }
+int main()
+{
+    float radius;
+    printf("enter radius");
+    scanf("%f",&radius);
+    printf("the area is %2.f",calculatearea(radius));
+
+    return 0;
+}
+    
 
    
