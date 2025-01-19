@@ -71,7 +71,9 @@ int main()
     printf("the sum is %d",add);
     return 0;
 }
- // this raised to the power this 
+
+ 
+  // this raised to the power this 
     #include<stdio.h>
     int power(int a,int b){
     if(b==0)return 1;
@@ -87,3 +89,20 @@ int main()
     return 0;
     }
 
+
+
+  //fibonacci  term using recusion:
+#include <stdio.h>
+int fibo(int n){
+    if(n<=2) return 1;
+    return fibo(n-1)+fibo(n-2);
+}
+int main()
+{
+    int n;
+    printf("enter fibonacci term:");
+    scanf("%d",&n);
+    printf("fibonacci term %d",fibo(n));
+
+    return 0;
+}
