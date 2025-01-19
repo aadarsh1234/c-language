@@ -53,4 +53,22 @@ int main (){
     sum(n,0);
     return 0;
 }
+// print sum return type 5=15
+#include <stdio.h>
+int sum(int n){
+    if(n==1||n==0)
+     return 1;
+     int recsum=n+sum(n-1);
+     return recsum;
+}
+
+int main()
+{
+    int n;
+    printf(" enter the value ");
+    scanf("%d",&n);
+    int add=sum(n);
+    printf("the sum is %d",add);
+    return 0;
+}
 
