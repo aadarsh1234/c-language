@@ -263,6 +263,25 @@ int main (){
     printf("After swaping x=%d,y=%d\n",x,y);
     return 0;
 }
+(9) power 
+#include<stdio.h>
+int power(int a,int b){
+    int x=1;
+    for(int i=1;i<=b;i++){
+        x=x*a;
+        }
+        return x;
+}
+int main(){
+    int a,b;
+    printf("enter a and b:");
+    scanf("%d %d",&a,&b);
+    int p=power(a,b);
+    printf("%d is raised to power of %d is %d",a,b,p);
+
+return 0;
+}
+
     
 
    
