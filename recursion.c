@@ -124,3 +124,27 @@ int main()
 
     return 0;
 }
+
+//powerlogrethmic
+
+#include <stdio.h>
+int powerlog(int a,int b){
+    if(b==0) return 1;
+    int x=powerlog(a,b/2);
+    if(b%2==0)
+    return x*x;
+    else 
+    return a*x*x;
+}
+int main()
+{
+    int a,b;
+    printf("enter base:");
+    scanf("%d",&a);
+    printf("enter power:");
+    scanf("%d",&b);
+    int p=powerlog(a,b);
+    printf("%d is raised to power of %d is %d ",a,b,p);
+
+    return 0;
+}
