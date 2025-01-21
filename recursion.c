@@ -148,3 +148,32 @@ int main()
 
     return 0;
 }
+
+//maze path 
+
+#include<stdio.h>
+int maze(int n,int m){
+    int rightway=0;
+    int downway=0;
+    if(n==1 && m==1) return 1;
+    if(n==1){
+        rightway+=maze(n,m-1);
+    }
+    if(m==1){
+        downway=maze(n-1,m);
+    }
+    if(n>1&&m>1){
+        rightway+=maze(n,m-1);
+        downway+=maze(n-1,m);
+    }
+    return rightway+downway;
+}
+int main(){
+    int n,m;
+    printf("enter row:");
+    scanf("%d",&n);
+    printf("enter colum");
+    scanf("%d",&m);
+    printf("%d",maze(n,m));
+    return 0;
+}
