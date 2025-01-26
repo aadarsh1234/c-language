@@ -65,3 +65,24 @@ if(!c)
 printf("c is equal to 0.");
 return 0;
 }
+
+(simple interest)
+#include <stdio.h>
+
+int main()
+{
+    float principal,rate,time,SI;
+    printf("Enter principal:");
+    scanf("%f",& principal);
+    
+    printf("Enter rate:");
+    scanf("%f",&rate);
+    
+    printf("Enter time:");
+    scanf("%f",&time);
+    
+    SI=principal*rate*time/100;
+    printf("The Simple interest is = %f",SI);
+    
+    return 0;
+}
