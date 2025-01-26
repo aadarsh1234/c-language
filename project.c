@@ -119,3 +119,22 @@ int main() {
     }
     return 0;
 }
+
+(relational opretors)
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    printf("Enter two integer");
+    scanf("%d %d",&a,&b);
+    
+    printf("%d==%d:%d(Equal to)\n",a,b,a==b);
+    printf("%d!=%d:%d(Not equal to)\n",a,b,a!=b);
+    printf("%d > %d:%d(Greater than)\n",a,b,a>b);
+    printf("%d < %d:%d(less then)\n",a,b,a<b);
+    printf("%d >=%d:%d(Greater equal\n)",a,b,a>=b);
+    printf("%d <=%d:%d(less equal)",a,b,a<=b);
+
+    return 0;
+}
