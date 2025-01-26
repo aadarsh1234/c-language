@@ -18,3 +18,10 @@ int main()
     
   //  Displyay result
   printf("Addition = %d\n",add);
+  printf("Subtract = %d\n",sub);
+  printf("Multiply = %d\n",mul);
+  printf("Divide   = %.2f\n",divi);
+  printf("Module   = %d\n",mod);
+  
+    return 0;
+}
