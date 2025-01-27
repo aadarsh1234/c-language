@@ -138,3 +138,29 @@ int main()
 
     return 0;
 }
+
+(student result)
+
+#include <stdio.h>
+
+int main() {
+    int marks[6];
+    int pass=1;
+    printf("enter marks of six student\n");
+    for(int i=0;i<6;i++){
+        printf("subject %d:",i+1);
+        scanf("%d",&marks[i]);
+        
+    if(marks[i]<33){
+        pass=0;
+        } 
+           }
+     
+    if(pass){
+        printf("Result:pass\n");
+    }
+    else{
+        printf("Results:fail\n");
+    }
+    return 0;
+}
