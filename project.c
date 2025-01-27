@@ -164,3 +164,31 @@ int main() {
     }
     return 0;
 }
+
+(conditional using switch case)
+
+#include <stdio.h>
+int add(int a,int b){
+    return a+b;
+}
+int subtract(int a,int b){
+    return a-b;
+}
+int product(int a,int b){
+    return a*b;
+}
+ float divide(int a,int b){
+     if(a!=0)
+   return  (float) a/b;
+   else 
+   printf("zero");
+}
+int main(){
+    int num1,num2;
+    printf("enter two integer:");
+    scanf("%d %d",&num1,&num2);
+    printf("sum %d\n",add(num1,num2));
+    printf("sub %d\n",subtract(num1,num2));
+    printf("product %d\n",product(num1,num2));
+    printf("divide %.2f\n",divide(num1,num2));
+}
