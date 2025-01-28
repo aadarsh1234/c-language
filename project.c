@@ -249,3 +249,29 @@ int main() {
     
     return 0;
 }
+
+(function like paramatrized)
+#include <stdio.h>
+
+int main() {
+    int num = 10;           // A normal integer variable
+    int *ptr;               // Pointer variable to store the address of an integer
+
+    // Store the address of 'num' in the pointer
+    ptr = &num;
+
+    // Output the value of 'num' using both the variable and the pointer
+    printf("Value of num: %d\n", num);
+    printf("Value of num using pointer: %d\n", *ptr);
+
+    // Output the address of 'num'
+    printf("Address of num: %p\n", &num);
+    printf("Address stored in pointer ptr: %p\n", ptr);
+
+    // Change the value of 'num' using the pointer
+    *ptr = 20;
+    printf("\nAfter modifying value using pointer:\n");
+    printf("New value of num: %d\n", num);
+
+    return 0;
+}
