@@ -192,3 +192,24 @@ int main(){
     printf("product %d\n",product(num1,num2));
     printf("divide %.2f\n",divide(num1,num2));
 }
+
+(1D array)
+#include <stdio.h>
+
+int main() {
+    int n,i,sum=0;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    
+    int arr[n];
+    printf("Enter %d element of array:\n",n);
+    for(i=0;i<n;i++){
+        printf("Element %d:",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    printf("the sum of element is %d:",sum);
+    return 0;
+}
