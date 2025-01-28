@@ -275,3 +275,33 @@ int main() {
 
     return 0;
 }
+
+(structure student inform)
+#include <stdio.h>
+
+// Define a structure to represent a student
+struct Student {
+    int rollNo;        // Student's roll number
+    char name[50];     // Student's name
+    float marks;       // Student's marks
+};
+
+int main() {
+    // Declare a variable of type 'Student'
+    struct Student student1;
+
+    // Input details for the student
+    printf("Enter the roll number: ");
+    scanf("%d", &student1.rollNo);
+    printf("Enter the name: ");
+    scanf(" %[^\n]", student1.name);  // To read a string with spaces
+    printf("Enter the marks: ");
+    scanf("%f", &student1.marks);
+
+    // Display the student's details
+    printf("\nStudent Details:\n");
+    printf("Roll Number: %d\n", student1.rollNo);
+    printf("Name: %s\n", student1.name);
+    printf("Marks: %.2f\n", student1.marks);
+
+    return 0;
