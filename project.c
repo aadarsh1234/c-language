@@ -213,3 +213,39 @@ int main() {
     printf("the sum of element is %d:",sum);
     return 0;
 }
+
+(2D array)
+
+#include <stdio.h>
+
+int main() {
+ int row,col,i,j,sum=0;
+   printf("enter the number of row:");
+   scanf("%d",&row);
+   printf("enter number of columns;");
+   scanf("%d",&col);
+   
+   int arr[row][col];
+   printf(" enter the elements of the 2D array:\n");
+   for(i=0;i<row;i++){
+       for(j=0;j<col;j++){
+           printf("Element [%d][%d]:",i+1,j+1);
+           scanf("%d",&arr[i][j]);
+       }
+   }
+   printf("the 2D array is:\n");
+   for(i=0;i<row;i++){
+       for(j=0;j<col;j++){
+           printf("%d",arr[i][j]);
+       }
+       printf("\n");
+   }
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            sum+=arr[i][j];
+        }
+    }
+    printf("\nThe sum of in the 2D array is %d\n",sum);
+    
+    return 0;
+}
