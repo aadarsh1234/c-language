@@ -177,3 +177,37 @@ int main(){
     printf("%d",maze(n,m));
     return 0;
 }
+
+maze path 
+
+#include <stdio.h>
+ int maze(int cr,int cc,int er,int ec){
+    int rightway=0;
+    int downway=0;
+    if(cr==er && cc==cc) return 1;
+    if(cr==er){ //rightway
+          rightway+=maze(cr,cc+1,er,ec);
+    }
+    if(cc==ec){//downway
+    downway+=maze(cr+1,cc,er,ec);
+    }
+    if(cr<=er && cc<=ec){
+        rightway=+maze(cr,cc+1,er,ec);
+        downway=+maze(cr+1,cc,er,ec);
+    }
+    int totalway=rightway+downway;
+    return totalway;
+ }
+int main()
+{
+    int n;
+    printf("Hello World");
+    scanf("%d",&n);
+    int m;
+    printf("enter column");
+    scanf("%d",&m);
+    int totalway=maze(1,1,n,m);
+    printf("%d",totalway);
+
+    return 0;
+}
