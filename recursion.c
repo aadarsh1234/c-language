@@ -233,3 +233,25 @@ int main()
 
     return 0;
 }
+
+zigzag 111 
+211121112
+
+#include <stdio.h>
+ void zigzag(int n){
+     if(n==0)return;
+     printf("%d",n);
+     zigzag(n-1);
+     printf("%d",n);
+     zigzag(n-1);
+     printf("%d",n);
+ }
+int main()
+{
+    int n;
+    printf("Hello World");
+    scanf("%d",&n);
+    zigzag(n);
+
+    return 0;
+}
