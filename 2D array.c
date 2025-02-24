@@ -56,3 +56,18 @@ int main()
 
     return 0;
 }
+(4) also insilization 
+#include <stdio.h>
+
+int main()
+{
+    int arr[4][2]={1234,25,3456,64,2345,67 ,7890,98};
+    for(int i=0;i<4;i++){
+        for(int j=0;j<2;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
