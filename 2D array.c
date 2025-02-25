@@ -100,3 +100,44 @@ int main()
 
     return 0;
 }
+(6) add two matric 
+#include <stdio.h>
+
+int main()
+{ 
+    int r;
+    printf("enter nuber of row:");
+    scanf("%d",&r);
+    int c;
+    printf("enter number of column:");
+    scanf("%d",&c);
+    int arr[r][c];
+    for(int i=0;i<r;i++){
+     for(int j=0;j<c;j++){
+         scanf("%d",&arr[i][j]);
+     }
+    }
+    int brr[r][c];
+    for(int i=0;i<r;i++){
+     for(int j=0;j<c;j++){
+         scanf("%d",&brr[i][j]);
+     }
+    }
+     int result[r][c];
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            result[i][j]=arr[i][j]+brr[i][j];
+            
+        }
+      
+    }
+   for(int i=0;i<r;i++){
+       for(int j=0;j<c;j++){
+           printf("%d ",result[i][j]);
+       }
+       printf("\n");
+   }
+   
+
+    return 0;
+}
