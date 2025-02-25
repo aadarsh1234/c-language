@@ -141,3 +141,33 @@ int main()
 
     return 0;
 }
+(7) find sum n×m
+#include <stdio.h>
+
+int main()
+{ 
+    int r;
+    printf("enter nuber of row:");
+    scanf("%d",&r);
+    int c;
+    printf("enter number of column:");
+    scanf("%d",&c);
+    printf("enter all the elemnt:");
+    int arr[r][c];
+    for(int i=0;i<r;i++){
+     for(int j=0;j<c;j++){
+         scanf("%d",&arr[i][j]);
+     }
+     
+    }
+    int sum=0;
+    for(int i=0;i<r;i++){
+     for(int j=0;j<c;j++){
+        sum+=arr[i][j];
+     }
+     
+    }
+    printf("%d",sum);
+
+    return 0;
+}
