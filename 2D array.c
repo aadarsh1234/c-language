@@ -171,3 +171,22 @@ int main()
 
     return 0;
 }
+(8) find max element in the array
+#include <stdio.h>
+#include<stdbool.h>
+
+int main()
+{    int max = -2111;
+int idx=-1;
+    int arr[2][2]={1,2,2,3};
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            if(max<arr[i][j]){
+                max=arr[i][j];
+                idx=true;
+            }
+        }
+    }
+    printf("%d is the maximum value and its idx%d",max,idx);
+    return 0;
+}
