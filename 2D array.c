@@ -363,4 +363,41 @@ int main()
 
     return 0;
 }
+
+(13) wave form ->1 odd row reverse
+
+#include <stdio.h>
+
+int main()
+{
+    int m;
+    printf("enter row of matrix:");
+    scanf("%d",&m);
+    int n;
+    printf("enter the column:");
+    scanf("%d",&n);
+    printf("enter element of matrix:");
+    int arr[m][n];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    // wave form
+    for(int i=0;i<m;i++){
+        if(i%2==0){
+            for(int j=0;j<n;j++){
+                printf("%d ",arr[i][j]);
+            }
+        }
+        else{
+            for(int j=n-1;j>=0;j--){
+                printf("%d ",arr[i][j]);
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
  
