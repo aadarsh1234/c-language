@@ -41,7 +41,7 @@ int main()
     return 0;
 }
 
-(3) alse insilization
+(3) also insilization
 #include <stdio.h>
 
 int main()
