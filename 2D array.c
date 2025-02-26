@@ -491,4 +491,55 @@ int main()
     return 0;
 }
         
+ (16) n2 spiral order filled with element .
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter row/columnof matrix:");
+    scanf("%d",&n);
+    int a[n][n];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\n");
+    // spiral form
+    int minr=0;
+    int maxr=n-1;
+    int minc=0;
+    int maxc=n-1;
+    int tne=n*n;
+    int count=0;
+    int num=1;
+    while(count<tne){
+        //  print minmum row ;
+        for(int j=minc;j<=maxc && count<tne;j++){
+           a[minr][j]=num++;
+            count++;
+        }
+    minr++;
+    // printf maximum column;
+    for(int i=minr;i<=maxr && count<tne;i++){
+        a[i][maxc]=num++;
+        count++;
+    }
+    maxc--;
+    // print maximum row;
+    for(int j=maxc;j>=minc &&count<tne;j--){
+         a[maxr][j]=num++;
+        count++;
+    }
+    maxr--;
+    for(int i=maxr;i>=minr &&count<tne;i--){
+        a[i][minc]=num++;
+        count++;
+    }
+    minc++;
+    }
+    return 0;
+}
+        
         
