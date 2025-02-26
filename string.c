@@ -27,3 +27,22 @@ int main()
 
     return 0;
 }
+
+(3) size of string
+#include <stdio.h>
+
+int main()
+{
+    char str[40];
+    puts("enter string");
+    scanf("%[^\n]s",str);
+    puts("the size of string is:");
+    int k=0;
+    int size=0;
+    while(str[k]!='\0'){
+        size++;
+        k++;
+    }
+    printf("%d",size);
+    return 0;
+}
