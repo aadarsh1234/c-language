@@ -436,3 +436,59 @@ int main()
 
     return 0;
 }
+(15) sprial form
+#include <stdio.h>
+
+int main()
+{
+    int m;
+    printf("enter row of matrix:");
+    scanf("%d",&m);
+    int n;
+    printf("enter the column:");
+    scanf("%d",&n);
+    printf("enter element of matrix:");
+    int a[m][n];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\n");
+    // spiral form
+    int minr=0;
+    int maxr=m-1;
+    int minc=0;
+    int maxc=n-1;
+    int tne=m*n;
+    int count=0;
+    while(count<tne){
+        //  print minmum row ;
+        for(int j=minc;j<=maxc && count<tne;j++){
+            printf("%d ",a[minr][j]);
+            count++;
+        }
+    minr++;
+    // printf maximum column;
+    for(int i=minr;i<=maxr && count<tne;i++){
+        printf("%d ",a[i][maxc]);
+        count++;
+    }
+    maxc--;
+    // print maximum row;
+    for(int j=maxc;j>=minc && count<tne;j--){
+        printf("%d ",a[maxr][j]);
+         count++;
+    }
+    maxr--;
+    // print minimum column;
+    for(int i=maxr;i>=minr &&count<tne;i--){
+        printf("%d ",a[i][minc]);
+        count++;
+    }
+    minc++;
+    }
+    return 0;
+}
+        
+        
