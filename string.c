@@ -85,3 +85,15 @@ int main()
     }
     return 0;
 }
+(6) retrun let  of string
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{ 
+    char* str="aadarsh dubey";
+    int x= strlen(str);
+    printf("%d",x);
+
+    return 0;
+}
