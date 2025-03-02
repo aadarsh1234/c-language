@@ -258,3 +258,51 @@ int main(){
      printf("%d\n",pikachu.hp);
      return 0;
 }
+(8) student department same or  not
+ #include<stdio.h>
+#include<string.h>
+ typedef struct student{
+     int rollno;
+     char name [20];
+     char department[20];
+     char coruse[20];
+     int yearofjoining;
+ } student;
+ void check(student s1,student s2){
+     if(strcmp(s1.department,s2.department)==0){
+         printf("both are same department%s\n",s1.department);
+     }
+     else{
+         printf("both are different department\n");
+         
+     }
+ }
+ int main(){
+     
+      student s1,s2;
+     printf("enter  first student roll no:");
+     scanf("%d",&s1.rollno);
+     printf("enter student name:");
+     scanf("%s",s1.name);
+      printf("enter student dapart:");
+     scanf("%s",s1.department);
+      printf("enter student course:");
+     scanf("%s",s1.coruse);
+     printf("enter student yearofjoining:");
+     scanf("%d",&s1.yearofjoining);
+     
+      printf("enter  second student roll no:");
+     scanf("%d",&s2.rollno);
+     printf("enter student name:");
+     scanf("%s",s2.name);
+      printf("enter student dapart:");
+     scanf("%s",s2.department);
+      printf("enter student course:");
+     scanf("%s",s2.coruse);
+     printf("enter student yearofjoining:");
+     scanf("%d",&s2.yearofjoining);
+     
+     check(s1,s2);
+     
+     return 0;
+ }
