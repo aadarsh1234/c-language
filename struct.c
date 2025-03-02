@@ -198,3 +198,38 @@ int main()
 
     return 0;
 }
+(7) compare the a to b
+
+#include <stdio.h>
+#include <stdbool.h>
+
+int main()
+{
+    typedef struct date{
+        int day;
+        int month;
+        int year;
+    } date;
+    
+    date a,b;
+    a.day=3;
+    a.month=11;
+    a.year=2023;
+    
+    b.day=3;
+    b.month=11;
+    b.year=2023;
+    
+    bool flag=true;
+    if(a.day!=b.day) flag=false;
+    if(a.month!=b.month) flag=false;
+    if(a.year!=a.year) flag=false;
+    
+    if(flag ==true) printf("date are same");
+    else 
+    printf("date are different ");
+    
+    
+
+    return 0;
+}
