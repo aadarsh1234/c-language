@@ -233,3 +233,28 @@ int main()
 
     return 0;
 }
+(8) structure variable can be  passesd to  a funtion
+#include<stdio.h>
+typedef struct pokemon{
+    int hp;
+    int speed;
+    int attack;
+    
+} pokemon ;
+void change(pokemon p){
+    p.attack=70;
+    p.speed=80;
+    p.hp=45;
+    return;
+}
+int main(){
+    pokemon pikachu;
+    pikachu.attack=50;
+    pikachu.speed=70;
+    pikachu.hp=50;
+    change(pikachu);
+    printf("%d\n",pikachu.attack);
+    printf("%d\n",pikachu.speed);
+     printf("%d\n",pikachu.hp);
+     return 0;
+}
