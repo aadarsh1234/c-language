@@ -37,3 +37,44 @@ int main()
      printf("%d",pikachu.attack);
     return 0;
 }
+(2) book detail
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    struct book{
+     char name[50];
+     float price ;
+     int nofpage;
+    } math,pyh,chem;
+   
+    math.nofpage=67;
+    math.price=78;
+    strcpy(math.name,"mathmatics");
+     
+     pyh.nofpage=64;
+    pyh.price=98;
+    strcpy(pyh.name,"physics");
+    
+    chem.nofpage=47;
+    chem.price=93;
+    strcpy(chem.name,"chemistry");
+    
+   printf("%d\n",math.nofpage);
+   printf("%f\n",math.price);
+   printf("%s\n",math.name);
+    
+   printf("%d\n",pyh.nofpage);
+   printf("%f\n",pyh.price);
+   printf("%s\n",pyh.name);
+   
+   printf("%d\n",chem.nofpage);
+   printf("%f\n",chem.price);
+   printf("%s",chem.name);
+ 
+
+
+    return 0;
+}
