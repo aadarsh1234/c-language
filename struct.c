@@ -161,3 +161,40 @@ int main()
      }
     return 0;
 }
+(6) array of structure cricter 3 detail
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    typedef struct cricketer{
+        char firstname[15];
+        char lastname[15];
+        int age;
+        int nofmatch;
+        float average;
+    } cricketer;
+    
+    cricketer arr[3];
+    for(int i=0;i<3;i++){
+        printf("enter  the firstName:");
+        scanf("%s",arr[i].firstname);
+         printf("enter  the lastName:");
+        scanf("%s",arr[i].lastname);
+        printf("enter the age:");
+        scanf("%d",&arr[i].age);
+        printf("enter the nofmatch:");
+        scanf("%d",&arr[i].nofmatch);
+        printf("enter the average:");
+        scanf("%f",&arr[i].average);
+    }
+        for(int i=0;i<3;i++){
+        printf(" Name:%s %s\n",arr[i].firstname,arr[i].lastname);
+        printf("Age:%d\n",arr[i].age);
+        printf("nofmatch:%d\n",arr[i].nofmatch);
+        printf("Avarege:%f\n",arr[i].average);
+    }
+
+    return 0;
+}
