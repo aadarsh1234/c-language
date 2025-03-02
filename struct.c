@@ -78,3 +78,30 @@ int main()
 
     return 0;
 }
+
+(3) person detail
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    struct person{
+     char name[50];
+     int salary;
+     int age;
+    } a,b,c;
+   
+    a.salary=4000;
+    a.age=18;
+    strcpy(a.name,"Aadarsh");
+     
+    b.salary=8000;
+    b.age=32;
+    strcpy(b.name,"vijay");
+
+   printf("%s\n",a.name);
+   printf("%d\n",b.age);
+
+    return 0;
+}
