@@ -306,3 +306,33 @@ int main(){
      
      return 0;
  }
+
+(9) pointer of structure 
+
+#include <stdio.h>
+#include<string.h>
+ typedef struct pokemon{
+     int hp;
+     int attack;
+     char tier;
+     int speed;
+     char name[15];
+ } pokemon;
+int main()
+{
+    pokemon pikachu;
+    pikachu.hp=24;
+    pikachu.speed=45;
+    pikachu.attack=78;
+    pikachu.tier='A';
+    strcpy(pikachu.name,"pikachu");
+    
+     pokemon* x=&pikachu;
+    printf("%p\n",&pikachu.hp);
+    printf("%p\n",&pikachu.speed);
+    printf("%p\n",&pikachu.attack);
+    printf("%p\n",&pikachu.tier);
+    printf("%p\n",pikachu.name);
+    printf("%p",x);
+    return 0;
+}
