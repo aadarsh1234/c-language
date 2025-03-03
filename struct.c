@@ -336,3 +336,46 @@ int main()
     printf("%p",x);
     return 0;
 }
+(10) change funtion on structure
+#include <stdio.h>
+#include<string.h>
+typedef struct pokemon{
+    int hp;
+    int speed;
+    int attack;
+    char tier;
+    char name[15];
+} pokemon ;
+void change(pokemon* p){
+    (*p).hp=50;
+    (*p).speed=60;
+    (*p).attack=35;
+    (*p).tier='A';
+    strcpy((*p).name,"charizard");
+    return;
+}
+int main()
+{
+    pokemon pikachu;
+    pikachu.hp=60;
+    pikachu.speed=70;
+    pikachu.attack=40;
+    pikachu.tier='B';
+    strcpy(pikachu.name,"pikachu");
+    
+    printf("%d\n",pikachu.hp); 
+    printf("%d\n",pikachu.speed);
+    printf("%d\n",pikachu.attack);
+    printf("%c\n",pikachu.tier);
+    printf("%s\n",pikachu.name);
+    
+    change(&pikachu);
+    
+    printf("%d\n",pikachu.hp); 
+    printf("%d\n",pikachu.speed);
+    printf("%d\n",pikachu.attack);
+    printf("%c\n",pikachu.tier);
+    printf("%s\n",pikachu.name);
+
+    return 0;
+}
