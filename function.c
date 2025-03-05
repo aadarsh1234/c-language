@@ -36,7 +36,7 @@ int main(){
 return 0;
 }
 
-(3)
+(3) // greting
 #include <stdio.h>
 void america(){
 printf("you are in America\n");
