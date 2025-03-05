@@ -1,4 +1,4 @@
-combination 
+ (1) //combination 
 
 #include <stdio.h>
 int factorial (int x){
@@ -21,7 +21,7 @@ int main()
 
     return 0;
 }
-(2)
+(2)// sum of two  number
 #include <stdio.h>
 int add(int a,int b){
     return a+b;
