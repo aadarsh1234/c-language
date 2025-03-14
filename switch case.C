@@ -81,3 +81,33 @@ int main()
     
    return 0;
 }
+
+( calculotr)
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+   int a,b;
+   int option;
+   printf("1.additin\n 2.subtract\n 3.muliply\n 4.diviide\n");
+   printf(" enter two oprator:");
+   scanf("%d %d",&a,&b);
+   printf("enter your choice");
+   scanf("%d",&option);
+   
+   switch(option){
+       case 1 : printf("Additin of %d and %d is %d",a,b,a+b);
+       break;
+       case 2 : printf("subtract of %d and %d is %d",a,b,a-b);
+       break;
+       case 3 : printf("multipky of %d and %d is %d",a,b,a*b);
+       break;
+       case 4 : printf("divide of %d and %d is %d",a,b,a/b);
+       break;
+       default:
+       printf("invalid operator");
+       break;
+   }
+    return 0;
+}
